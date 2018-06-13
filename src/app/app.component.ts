@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { enableDebugTools } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'app- interpolation test';
+  author = 'Oscar Miticanoy';
+  count = 0;
+  imgSource = './../favicon.ico'
+  enable = false;
+
+  function habilitar(h:boolean) {
+    if (h==false)
+      this.enable = true;
+  }
 }
