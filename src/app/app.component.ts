@@ -12,9 +12,4 @@ export class AppComponent {
   count = 0;
   imgSource = './../favicon.ico'
   enable = false;
-
-  function habilitar(h:boolean) {
-    if (h==false)
-      this.enable = true;
-  }
 }
